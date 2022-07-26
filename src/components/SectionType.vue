@@ -1,17 +1,32 @@
 <template>
-  <div class="section-type-container">
-    <img src="../assets/images/icon-5.png" alt="">
-    <h2>meet our doctors</h2>
-    <hr>
-    <span>
-        Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae
-    </span>
-  </div>
+    <div class="section-type-container" v-if="doctorSectionHead">
+        <img :src="doctorSectionHead.imgUrl" alt="">
+        <h2>{{doctorSectionHead.title}}</h2>
+        <hr>
+        <span>
+            {{doctorSectionHead.text}}
+        </span>
+    </div>
+    <div class="section-type-container" v-else-if="servicesSectionHead">
+        <img :src="servicesSectionHead.imgUrl" alt="">
+        <h2>{{servicesSectionHead.title}}</h2>
+        <hr>
+        <span>
+            {{servicesSectionHead.text}}
+        </span>
+    </div>
 </template>
 
 <script>
 export default {
-
+    props:{
+        'doctorSectionHead':{
+            type: Object,
+        },
+        'servicesSectionHead':{
+            type: Object,
+        }
+    }
 }
 </script>
 

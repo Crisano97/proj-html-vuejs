@@ -63,7 +63,7 @@ export default {
         height: 100vh;
         width: 100%;
         background-image: url('../assets/images/header-image-homepage.jpg');
-        background-size: 100rem;
+        background-size: 100%;
         background-position: top;
         background-repeat: no-repeat;
 

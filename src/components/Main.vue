@@ -15,15 +15,9 @@
     </section>
     <section class="doctors">
         <div class="container">
-            <!-- <SectionType /> -->
-            <div class="section-type">
-                <img src="../assets/images/icon-5.png" alt="doctor icon">
-                <h2>meet our doctors</h2>
-                <hr>
-                <span>
-                    Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae
-                </span>
-            </div>
+            <SectionType 
+            :doctorSectionHead="doctorSectionHead"
+            />
             <div class="cards-container">
                 <DoctorCard v-for="(doctor, index) in doctorsCardsElements" :key="index"
                 :doctor="doctor"
@@ -33,14 +27,9 @@
     </section>
     <section class="services">
         <div class="container">
-            <div class="section-type">
-                <img src="../assets/images/icon-6.png" alt="doctor icon">
-                <h2>meet our doctors</h2>
-                <hr>
-                <span>
-                    Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae
-                </span>
-            </div>
+            <SectionType 
+            :servicesSectionHead="servicesSectionHead"
+            />
             <div class="features">
                 <MainFeatureElement v-for="(service, index) in servicesSectionElements" :key="index"
                 :service="service"
@@ -54,14 +43,14 @@
 <script>
 import MainFeatureElement from './MainFeatureElement.vue';
 import DoctorCard from './DoctorCard.vue';
-// import SectionType from './SectionType.vue';
+import SectionType from './SectionType.vue';
 
 
 export default {
     components:{
         MainFeatureElement,
         DoctorCard,
-        // SectionType,
+        SectionType,
     },
     data:function(){
         return{
@@ -137,14 +126,18 @@ export default {
                     title: 'medical coounseling',
                     text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
                 },
-            ]
-            // section: [
-            //     {
-            //         imgUrl: './images/icon.5.png',
-            //         title: 'meet our doctors',
-            //         text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
-            //     }
-            // ]
+            ],
+            doctorSectionHead: {
+                imgUrl: '/images/icon-5.png',
+                title: 'meet our doctors',
+                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+            },
+            servicesSectionHead: {
+                imgUrl: '/images/icon-6.png',
+                title: 'our health services',
+                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+            },
+            
         }
     }
 }
@@ -193,22 +186,5 @@ export default {
             justify-content: space-between;
         }
     }
-
-    div.section-type{
-            width: 70%;
-            margin: 0 auto;
-
-            h2{
-                font-size: 2rem;
-                text-transform: uppercase;
-                font-weight: 100;
-            }
-
-            hr{
-                width: 40%;
-                margin: 2rem auto;
-                opacity: .3;
-            }
-        }
     
 </style>
