@@ -14,7 +14,13 @@
             </ul>
         </div>
     </nav>
-    
+    <div class="container">
+        <div class="element-container">
+            <h1>Caring <span>For Life</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae, animi aut inventore vero natus, cupiditate, ad cum vitae repellendus at.</p>
+            <button>learn more</button>
+        </div>
+    </div>
   </header>
 </template>
 
@@ -54,7 +60,7 @@ export default {
     @import "../styles/general.scss";
 
     header{
-        height: 80vh;
+        height: 90vh;
         width: 100%;
         background-image: url('../assets/images/header-image-homepage.jpg');
         background-size: cover;
@@ -101,6 +107,46 @@ export default {
                         }
                     }
                 }
+            }
+        }
+        
+        div.container{
+            width: 52%;
+            margin: 0 auto;
+            padding-top: 9%;
+            
+            div.element-container{
+                width: 31rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                height: 12rem;
+                color: white;
+            }
+            
+
+            h1{
+                font-weight: 100;
+                font-size: 3rem;
+                span{
+                    color: $primaryTextColor;
+                }
+            }
+            
+            p{
+                font-weight: 100;
+                font-size:.8rem;
+                line-height: 1.5rem;
+            }
+
+            button{
+                background-color: $primaryColorLight;
+                border: 0;
+                padding:  .5rem 1rem;
+                color: white;
+                text-transform: uppercase;
+
             }
         }
     }
