@@ -1,16 +1,25 @@
 <template>
-  <div class="feature-element-container">
-    <img :src="feature.imgUrl" alt="">
-    <h3>{{ feature.title }}</h3>
-    <p>{{ feature.text }}</p>
-  </div>
+    <div class="element-container" v-if="feature">
+        <img :src="feature.imgUrl" alt="">
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.text }}</p>
+    </div>
+    <div class="service-element" v-else-if="service">
+            <img :src="service.imgUrl" alt="">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.text }}</p>
+    </div>
 </template>
 
 <script>
 export default {
     props:{
         'feature' : {
-            required: true,
+            // required: true,
+            type: Object,
+        },
+        'service':{
+            // required: true,
             type: Object,
         }
     }
@@ -18,9 +27,24 @@ export default {
 </script>
 
 <style lang="scss">
-    div.feature-element-container{
-        width: calc(100% / 4 - .1rem);
+    div.element-container{
+        width: 25%;
         font-size: .7rem;
+
+        h3{
+            text-transform: uppercase;
+            font-weight: 100;
+        }
+
+        img{
+            width: 3rem;
+        }
+    }
+
+    div.service-element{
+        width: 30%;
+        font-size: .7rem;
+        margin-bottom: 4rem;
 
         h3{
             text-transform: uppercase;

@@ -31,6 +31,23 @@
             </div>
         </div>
     </section>
+    <section class="services">
+        <div class="container">
+            <div class="section-type">
+                <img src="../assets/images/icon-6.png" alt="doctor icon">
+                <h2>meet our doctors</h2>
+                <hr>
+                <span>
+                    Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae
+                </span>
+            </div>
+            <div class="features">
+                <MainFeatureElement v-for="(service, index) in servicesSectionElements" :key="index"
+                :service="service"
+                />
+            </div>
+        </div>
+    </section>
   </main>
 </template>
 
@@ -89,6 +106,37 @@ export default {
                     role: 'Nurse Practitioner',
                     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ad itaque officiis voluptatem iusto.',
                 },
+            ],
+            servicesSectionElements:[
+                {
+                    imgUrl: '/images/icon-14.png',
+                    title: 'reambulation center',
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                },
+                {
+                    imgUrl: '/images/icon-15.png',
+                    title: 'dental implants',
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                },
+                {
+                    imgUrl: '/images/icon-16.png',
+                    title: 'medicine researc',
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                },
+                {
+                    imgUrl: '/images/icon-11.png',
+                    title: 'blood bank',
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                },
+                {
+                    imgUrl: '/images/icon-12.png',
+                    title: 'pharmaceutical advice',
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                },{
+                    imgUrl: '/images/icon-13.png',
+                    title: 'medical coounseling',
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                },
             ]
             // section: [
             //     {
@@ -132,6 +180,7 @@ export default {
                 margin-top: 4rem;
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
         }
     }
@@ -139,7 +188,13 @@ export default {
     section.doctors{
         background-color: $grayBgColor;
 
-        div.section-type{
+        div.cards-container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    div.section-type{
             width: 70%;
             margin: 0 auto;
 
@@ -155,11 +210,5 @@ export default {
                 opacity: .3;
             }
         }
-
-        div.cards-container{
-            display: flex;
-            justify-content: space-between;
-        }
-    }
     
 </style>
