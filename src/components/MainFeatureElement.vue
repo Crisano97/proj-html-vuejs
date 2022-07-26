@@ -24,6 +24,7 @@ export default {
 
         h3{
             text-transform: uppercase;
+            font-weight: 100;
         }
 
         img{
