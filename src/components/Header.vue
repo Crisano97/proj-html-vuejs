@@ -14,6 +14,7 @@
             </ul>
         </div>
     </nav>
+    
   </header>
 </template>
 
@@ -50,6 +51,8 @@ export default {
 
 <style lang="scss" scoped>
 
+    @import "../styles/general.scss";
+
     header{
         height: 80vh;
         width: 100%;
@@ -82,10 +85,10 @@ export default {
 
                     li{
                         &:first-child a{
-                            color: blue;
+                            color: $primaryTextColor;
                         }
                         &:last-child{
-                            background-color: blue;
+                            background-color: $primaryColorLight;
                             padding: .5rem 1rem;
                         }
                         a{
