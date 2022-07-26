@@ -60,10 +60,10 @@ export default {
     @import "../styles/general.scss";
 
     header{
-        height: 90vh;
+        height: 100vh;
         width: 100%;
         background-image: url('../assets/images/header-image-homepage.jpg');
-        background-size: cover;
+        background-size: 100rem;
         background-position: top;
         background-repeat: no-repeat;
 
@@ -72,7 +72,7 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem;
+            padding: 1rem 7rem;
 
             div.logo-container img{
                 width: 10rem;
