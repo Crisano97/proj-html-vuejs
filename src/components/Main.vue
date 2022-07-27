@@ -50,6 +50,21 @@
         :item="item" 
         />
     </div>
+    <section class="appointment">
+        <div class="container">
+            <SectionType 
+            :appointmentSectionHead="appointmentSectionHead"
+            />
+            <div class="form-container">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <input type="date">
+                <textarea name="" id="" cols="100" rows="10" placeholder="How can we help?"></textarea>
+                <button>make an appointment</button>
+            </div>
+        </div>
+    </section>
   </main>
 </template>
 
@@ -173,7 +188,12 @@ export default {
                     imgUrl: '/images/wave-divider.png',
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
                 },
-            ]
+            ],
+            appointmentSectionHead: {
+                imgUrl: null,
+                title: 'Make an appointment',
+                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+            },
         }
     }
 }
@@ -236,11 +256,47 @@ export default {
     }
 
     div.health-features{
-        // height: 10rem;
         width: 100%;
         padding: 3rem 1rem;
         display: flex;
         justify-content: space-around;
         background-color: $primaryTextColor;
+    }
+
+    section.appointment{
+        background-image: url(../assets/images/make-an-appointment.jpg);
+
+        .form-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            
+            input{
+                width: calc(100% / 2 - 1rem);
+                padding: 1rem;
+                border: 1px solid white;
+                background-color: transparent;
+                color: white;
+            }
+
+            textarea{
+                width: 100%;
+                padding: 1rem;
+                border: 1px solid white;
+                background-color: transparent;
+                color: white;
+            }
+
+            button{
+                background-color: $primaryColorLight;
+                border: none;
+                width: 100%;
+                padding: 1rem 0;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+        }
     }
 </style>

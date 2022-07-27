@@ -15,12 +15,19 @@
             {{servicesSectionHead.text}}
         </span>
     </div>
-    <div class="section-type-container" v-else>
+    <div class="section-type-container c-white" v-else-if="facilitiesSectionHead">
         <img :src="facilitiesSectionHead.imgUrl" alt="">
         <h2>{{facilitiesSectionHead.title}}</h2>
         <hr>
         <span>
             {{facilitiesSectionHead.text}}
+        </span>
+    </div>
+    <div class="section-type-container c-white" v-else>
+        <h2>{{appointmentSectionHead.title}}</h2>
+        <hr>
+        <span>
+            {{appointmentSectionHead.text}}
         </span>
     </div>
 </template>
@@ -36,6 +43,9 @@ export default {
         },
         'facilitiesSectionHead':{
             type: Object,
+        },
+        'appointmentSectionHead':{
+            type:Object,
         }
     }
 }
@@ -55,7 +65,10 @@ export default {
         hr{
             width: 40%;
             margin: 2rem auto;
-            opacity: .3;
         }
+    }
+
+    .c-white{
+        color:white;
     }
 </style>
