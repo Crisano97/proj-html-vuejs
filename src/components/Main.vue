@@ -16,7 +16,7 @@
     <section class="doctors">
         <div class="container">
             <SectionType 
-            :doctorSectionHead="doctorSectionHead"
+            :data="doctorSectionHead"
             />
             <div class="cards-container">
                 <DoctorCard v-for="(doctor, index) in doctorsCardsElements" :key="index"
@@ -28,7 +28,7 @@
     <section class="services">
         <div class="container">
             <SectionType 
-            :servicesSectionHead="servicesSectionHead"
+            :data="servicesSectionHead"
             />
             <div class="features">
                 <MainFeatureElement v-for="(service, index) in servicesSectionElements" :key="index"
@@ -40,7 +40,7 @@
     <section class="facilities">
         <div class="container">
             <SectionType 
-            :facilitiesSectionHead="facilitiesSectionHead"
+            :data="facilitiesSectionHead"
             />
             <img src="../assets/images/play-icon.png" alt="">
         </div>
@@ -53,7 +53,7 @@
     <section class="appointment">
         <div class="container">
             <SectionType 
-            :appointmentSectionHead="appointmentSectionHead"
+            :data="appointmentSectionHead"
             />
             <div class="form-container">
                 <input type="text" placeholder="Name">
@@ -66,7 +66,9 @@
         </div>
     </section>
     <div class="carrasel-container">
-      <div class="container"></div>
+      <div class="container">
+        
+      </div>
     </div>
   </main>
 </template>
@@ -211,33 +213,35 @@ export default {
 
     section{
         padding: 4rem 0;
-        div.container{
+
+        div.text-container{
+            width: 70%;
+            margin: 0 auto;
+            font-weight: 100;
+
+            h1{
+                font-weight: 100;
+            }
+            p{
+                margin-top: 1.5rem;
+            }
+            }
+
+        div.features{
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    div.container{
             width: 52%;
             margin: 0 auto;
             text-align: center;
             color: $secondaryTextColor;
             line-height: 2rem;
-
-            div.text-container{
-                width: 70%;
-                margin: 0 auto;
-                font-weight: 100;
-
-                h1{
-                    font-weight: 100;
-                }
-                p{
-                    margin-top: 1.5rem;
-                }
-            }
-
-            div.features{
-                margin-top: 4rem;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
-        }
     }
 
     section.doctors{

@@ -15,11 +15,9 @@
 export default {
     props:{
         'feature' : {
-            // required: true,
             type: Object,
         },
         'service':{
-            // required: true,
             type: Object,
         }
     }

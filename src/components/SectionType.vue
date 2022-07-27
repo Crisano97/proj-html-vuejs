@@ -1,52 +1,22 @@
 <template>
-    <div class="section-type-container" v-if="doctorSectionHead">
-        <img :src="doctorSectionHead.imgUrl" alt="">
-        <h2>{{doctorSectionHead.title}}</h2>
+    <div class="section-type-container" v-if="data">
+        <img :src="data.imgUrl" alt="">
+        <h2>{{data.title}}</h2>
         <hr>
         <span>
-            {{doctorSectionHead.text}}
+            {{data.text}}
         </span>
     </div>
-    <div class="section-type-container" v-else-if="servicesSectionHead">
-        <img :src="servicesSectionHead.imgUrl" alt="">
-        <h2>{{servicesSectionHead.title}}</h2>
-        <hr>
-        <span>
-            {{servicesSectionHead.text}}
-        </span>
-    </div>
-    <div class="section-type-container c-white" v-else-if="facilitiesSectionHead">
-        <img :src="facilitiesSectionHead.imgUrl" alt="">
-        <h2>{{facilitiesSectionHead.title}}</h2>
-        <hr>
-        <span>
-            {{facilitiesSectionHead.text}}
-        </span>
-    </div>
-    <div class="section-type-container c-white" v-else>
-        <h2>{{appointmentSectionHead.title}}</h2>
-        <hr>
-        <span>
-            {{appointmentSectionHead.text}}
-        </span>
-    </div>
+    
 </template>
 
 <script>
 export default {
     props:{
-        'doctorSectionHead':{
+        'data':{
             type: Object,
         },
-        'servicesSectionHead':{
-            type: Object,
-        },
-        'facilitiesSectionHead':{
-            type: Object,
-        },
-        'appointmentSectionHead':{
-            type:Object,
-        }
+        
     }
 }
 </script>
