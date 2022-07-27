@@ -16,46 +16,17 @@
 
     <DoctorsSection />
 
-    <section class="services">
-        <div class="container">
-            <SectionHead 
-            :data="servicesSectionHead"
-            />
-            <div class="features">
-                <MainFeatureElement v-for="(service, index) in servicesSectionElements" :key="index"
-                :service="service"
-                />
-            </div>
-        </div>
-    </section>
-    <section class="facilities">
-        <div class="container">
-            <SectionHead 
-            :data="facilitiesSectionHead"
-            />
-            <img src="../assets/images/play-icon.png" alt="">
-        </div>
-    </section>
+    <ServicesSection />
+    
+    <FacilitiesSection />
     <div class="health-features">
         <MoreInfo v-for="item in moreInfoElements" :key="item.id"
         :item="item" 
         />
     </div>
-    <section class="appointment">
-        <div class="container">
-            <SectionHead 
-            :data="appointmentSectionHead"
-            />
-            <div class="form-container">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Phone Number">
-                <input type="date">
-                <textarea name="" id="" cols="100" rows="10" placeholder="How can we help?"></textarea>
-                <button>make an appointment</button>
-            </div>
-        </div>
-    </section>
+
+    <AppointmentSection />
+    
     <div class="carrasel-container">
       <div class="container">
         
@@ -67,6 +38,9 @@
 <script>
 import MainFeatureElement from './mainComponents/MainFeatureElement.vue';
 import DoctorsSection from './mainComponents/DoctorsSection.vue';
+import ServicesSection from './mainComponents/ServicesSection.vue';
+import FacilitiesSection from './mainComponents/FacilitiesSection.vue';
+import AppointmentSection from './mainComponents/AppointmentSection.vue';
 import SectionHead from './mainComponents/SectionHead.vue';
 import MoreInfo from './mainComponents/MoreInfo.vue'
 
@@ -75,6 +49,9 @@ export default {
     components:{
         MainFeatureElement,
         DoctorsSection,
+        ServicesSection,
+        FacilitiesSection,
+        AppointmentSection,
         SectionHead,
         MoreInfo,
     },
@@ -101,50 +78,7 @@ export default {
                     title: 'complementary therapies',
                     text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
                 },
-            ],
-            
-            servicesSectionElements:[
-                {
-                    imgUrl: '/images/icon-14.png',
-                    title: 'reambulation center',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-15.png',
-                    title: 'dental implants',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-16.png',
-                    title: 'medicine researc',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-11.png',
-                    title: 'blood bank',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-12.png',
-                    title: 'pharmaceutical advice',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },{
-                    imgUrl: '/images/icon-13.png',
-                    title: 'medical coounseling',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-            ],
-            
-            servicesSectionHead: {
-                imgUrl: '/images/icon-6.png',
-                title: 'our health services',
-                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
-            },
-            facilitiesSectionHead: {
-                imgUrl: '/images/icon-7.png',
-                title: 'tour our facilities',
-                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
-            },
+            ],               
             moreInfoElements: [
                 {
                     id: 0,
@@ -165,10 +99,7 @@ export default {
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
                 },
             ],
-            appointmentSectionHead: {
-                title: 'Make an appointment',
-                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
-            },
+            
         }
     }
 }
@@ -211,18 +142,7 @@ export default {
             line-height: 2rem;
     }
     
-    section.facilities{
-        height: 80vh;
-        background-image: url('../assets/images/paralax-bg-tour-facilities.jpg');
-        background-size: cover;
-        background-position: center;
-
-        img{
-            width: 3rem;
-            margin-top: 2rem;
-            cursor: pointer;
-        }
-    }
+   
 
     div.health-features{
         width: 100%;
@@ -230,46 +150,7 @@ export default {
         justify-content: space-around;
     }
 
-    section.appointment{
-        background-image: url(../assets/images/make-an-appointment.jpg);
-        background-size: cover;
-
-        .form-container{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 2rem;
-            
-            input{
-                width: calc(100% / 2 - 1rem);
-                padding: 1rem;
-                border: 1px solid white;
-                background-color: transparent;
-                color: white;
-            }
-
-            textarea{
-                width: 100%;
-                padding: 1rem;
-                border: 1px solid white;
-                background-color: transparent;
-                color: white;
-            }
-
-            button{
-                background-color: $primaryColorLight;
-                border: none;
-                width: 100%;
-                padding: 1rem 0;
-                color: white;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                cursor: pointer;
-            }
-        }
-
-    }
+    
 
     div.carrasel-container{
         height: 15rem;
