@@ -1,5 +1,5 @@
 <template>
-    <div class="section-type-container" v-if="data">
+    <div class="section-type-container">
         <img :src="data.imgUrl" alt="">
         <h2>{{data.title}}</h2>
         <hr>

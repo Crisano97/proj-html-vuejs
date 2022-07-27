@@ -74,10 +74,10 @@
 </template>
 
 <script>
-import MainFeatureElement from './MainFeatureElement.vue';
-import DoctorCard from './DoctorCard.vue';
-import SectionType from './SectionType.vue';
-import MoreInfo from './MoreInfo.vue'
+import MainFeatureElement from './mainComponents/MainFeatureElement.vue';
+import DoctorCard from './mainComponents/DoctorCard.vue';
+import SectionType from './mainComponents/SectionType.vue';
+import MoreInfo from './mainComponents/MoreInfo.vue'
 
 
 export default {
@@ -198,7 +198,6 @@ export default {
                 },
             ],
             appointmentSectionHead: {
-                imgUrl: null,
                 title: 'Make an appointment',
                 text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
             },

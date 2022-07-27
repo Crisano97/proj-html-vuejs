@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 
-    @import "../styles/general.scss";
+    @import "../../styles/general.scss";
 
     div.info-container{
         width: calc(100% / 3 );
