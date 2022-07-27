@@ -1,18 +1,6 @@
 <template>
   <main>
-    <section class="welcome">
-        <div class="container">
-            <div class="text-container">
-                <h1>Welcome to Avada Health</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo. Quidem nisi, minus labore laborum facere impedit, quibusdam molestiae cupiditate architecto autem voluptatum! Eius eveniet placeat quos earum fuga vel.</p>
-            </div>    
-            <div class="features">
-                <MainFeatureElement v-for="(feature, index) in welcomeSectionFeatures" :key="index"
-                :feature="feature"
-                />
-            </div>
-        </div>
-    </section>
+    <WelcomeSection />
 
     <DoctorsSection />
 
@@ -37,7 +25,7 @@
 </template>
 
 <script>
-import MainFeatureElement from './mainComponents/MainFeatureElement.vue';
+import WelcomeSection from './mainComponents/WelcomeSection.vue';
 import DoctorsSection from './mainComponents/DoctorsSection.vue';
 import ServicesSection from './mainComponents/ServicesSection.vue';
 import FacilitiesSection from './mainComponents/FacilitiesSection.vue';
@@ -48,7 +36,7 @@ import MoreInfo from './mainComponents/MoreInfo.vue'
 
 export default {
     components:{
-        MainFeatureElement,
+        WelcomeSection,
         DoctorsSection,
         ServicesSection,
         FacilitiesSection,
@@ -58,28 +46,7 @@ export default {
     },
     data:function(){
         return{
-            welcomeSectionFeatures: [
-                {
-                    imgUrl: '/images/icon-1.png',
-                    title: 'same day appointments',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-2.png',
-                    title: 'world class facilities',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-3.png',
-                    title: 'expert doctors',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-                {
-                    imgUrl: '/images/icon-4.png',
-                    title: 'complementary therapies',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
-                },
-            ],               
+                          
             moreInfoElements: [
                 {
                     id: 0,
