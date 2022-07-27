@@ -13,21 +13,12 @@
             </div>
         </div>
     </section>
-    <section class="doctors">
-        <div class="container">
-            <SectionType 
-            :data="doctorSectionHead"
-            />
-            <div class="cards-container">
-                <DoctorCard v-for="(doctor, index) in doctorsCardsElements" :key="index"
-                :doctor="doctor"
-                />
-            </div>
-        </div>
-    </section>
+
+    <DoctorsSection />
+
     <section class="services">
         <div class="container">
-            <SectionType 
+            <SectionHead 
             :data="servicesSectionHead"
             />
             <div class="features">
@@ -39,7 +30,7 @@
     </section>
     <section class="facilities">
         <div class="container">
-            <SectionType 
+            <SectionHead 
             :data="facilitiesSectionHead"
             />
             <img src="../assets/images/play-icon.png" alt="">
@@ -52,7 +43,7 @@
     </div>
     <section class="appointment">
         <div class="container">
-            <SectionType 
+            <SectionHead 
             :data="appointmentSectionHead"
             />
             <div class="form-container">
@@ -75,16 +66,16 @@
 
 <script>
 import MainFeatureElement from './mainComponents/MainFeatureElement.vue';
-import DoctorCard from './mainComponents/DoctorCard.vue';
-import SectionType from './mainComponents/SectionType.vue';
+import DoctorsSection from './mainComponents/DoctorsSection.vue';
+import SectionHead from './mainComponents/SectionHead.vue';
 import MoreInfo from './mainComponents/MoreInfo.vue'
 
 
 export default {
     components:{
         MainFeatureElement,
-        DoctorCard,
-        SectionType,
+        DoctorsSection,
+        SectionHead,
         MoreInfo,
     },
     data:function(){
@@ -111,26 +102,7 @@ export default {
                     text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
                 },
             ],
-            doctorsCardsElements: [
-                {
-                    imgUrl:'/images/doctor-1.jpg',
-                    name: 'jown snow',
-                    role: 'Anasthesiologist',
-                    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ad itaque officiis voluptatem iusto.',
-                },
-                {
-                    imgUrl:'/images/doctor-2.jpg',
-                    name: 'tony stark',
-                    role: 'Cardiologist',
-                    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ad itaque officiis voluptatem iusto.',
-                },
-                {
-                    imgUrl:'/images/doctor-3.jpg',
-                    name: 'anna smith',
-                    role: 'Nurse Practitioner',
-                    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ad itaque officiis voluptatem iusto.',
-                },
-            ],
+            
             servicesSectionElements:[
                 {
                     imgUrl: '/images/icon-14.png',
@@ -162,11 +134,7 @@ export default {
                     text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
                 },
             ],
-            doctorSectionHead: {
-                imgUrl: '/images/icon-5.png',
-                title: 'meet our doctors',
-                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
-            },
+            
             servicesSectionHead: {
                 imgUrl: '/images/icon-6.png',
                 title: 'our health services',
@@ -206,7 +174,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
     @import "../styles/general.scss";
 
@@ -241,15 +209,6 @@ export default {
             text-align: center;
             color: $secondaryTextColor;
             line-height: 2rem;
-    }
-
-    section.doctors{
-        background-color: $grayBgColor;
-
-        div.cards-container{
-            display: flex;
-            justify-content: space-between;
-        }
     }
     
     section.facilities{
