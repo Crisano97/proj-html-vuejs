@@ -46,7 +46,7 @@
         </div>
     </section>
     <div class="health-features">
-        <MoreInfo v-for="(item, index) in moreInfoElements" :key="index"
+        <MoreInfo v-for="item in moreInfoElements" :key="item.id"
         :item="item" 
         />
     </div>
@@ -177,16 +177,19 @@ export default {
             },
             moreInfoElements: [
                 {
+                    id: 0,
                     title: 'Emergency Care',
                     imgUrl: '/images/wave-divider.png',
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
                 },
                 {
+                    id: 1,
                     title: 'Expert Diagnostics',
                     imgUrl: '/images/wave-divider.png',
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
                 },
                 {
+                    id: 2,
                     title: 'Superb Rehabilitation',
                     imgUrl: '/images/wave-divider.png',
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
@@ -260,10 +263,10 @@ export default {
 
     div.health-features{
         width: 100%;
-        padding: 3rem 1rem;
+        // padding: 3rem 1rem;
         display: flex;
         justify-content: space-around;
-        background-color: $primaryTextColor;
+        // background-color: $primaryTextColor;
     }
 
     section.appointment{
