@@ -30,7 +30,6 @@ import DoctorsSection from './mainComponents/DoctorsSection.vue';
 import ServicesSection from './mainComponents/ServicesSection.vue';
 import FacilitiesSection from './mainComponents/FacilitiesSection.vue';
 import AppointmentSection from './mainComponents/AppointmentSection.vue';
-import SectionHead from './mainComponents/SectionHead.vue';
 import MoreInfo from './mainComponents/MoreInfo.vue'
 
 
@@ -41,7 +40,6 @@ export default {
         ServicesSection,
         FacilitiesSection,
         AppointmentSection,
-        SectionHead,
         MoreInfo,
     },
     data:function(){
