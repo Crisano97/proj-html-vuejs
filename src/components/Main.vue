@@ -154,4 +154,11 @@ export default {
         background-image: url('../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
 
     }
+
+    .c-white{
+        color:white;
+        hr{
+            color: white;
+        }
+    }
 </style>
