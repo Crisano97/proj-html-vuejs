@@ -40,5 +40,8 @@ export default {
 
     .c-white{
         color:white;
+        hr{
+            color: white;
+        }
     }
 </style>

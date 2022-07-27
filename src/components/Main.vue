@@ -19,6 +19,7 @@
     <ServicesSection />
     
     <FacilitiesSection />
+
     <div class="health-features">
         <MoreInfo v-for="item in moreInfoElements" :key="item.id"
         :item="item" 
@@ -142,15 +143,11 @@ export default {
             line-height: 2rem;
     }
     
-   
-
     div.health-features{
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
-
-    
 
     div.carrasel-container{
         height: 15rem;

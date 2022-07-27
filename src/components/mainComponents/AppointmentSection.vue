@@ -1,7 +1,7 @@
 <template>
   <section class="appointment">
         <div class="container">
-            <SectionHead 
+            <SectionHead class="c-white"
             :data="appointmentSectionHead"
             />
             <div class="form-container">

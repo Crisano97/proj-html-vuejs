@@ -1,7 +1,7 @@
 <template>
   <section class="facilities">
         <div class="container">
-            <SectionHead 
+            <SectionHead class="c-white" 
             :data="facilitiesSectionHead"
             />
             <img src="../../assets/images/play-icon.png" alt="">
@@ -35,7 +35,7 @@ export default {
         height: 80vh;
         background-image: url('../../assets/images/paralax-bg-tour-facilities.jpg');
         background-size: cover;
-        background-position: center;
+        background-position: center;       
 
         img{
             width: 3rem;
