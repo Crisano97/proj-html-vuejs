@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
     div.element-container{
-        width: 25%;
+        width: calc(100% / 4 - .1rem);
         font-size: .7rem;
 
         h3{

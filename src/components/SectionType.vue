@@ -15,6 +15,14 @@
             {{servicesSectionHead.text}}
         </span>
     </div>
+    <div class="section-type-container" v-else>
+        <img :src="facilitiesSectionHead.imgUrl" alt="">
+        <h2>{{facilitiesSectionHead.title}}</h2>
+        <hr>
+        <span>
+            {{facilitiesSectionHead.text}}
+        </span>
+    </div>
 </template>
 
 <script>
@@ -24,6 +32,9 @@ export default {
             type: Object,
         },
         'servicesSectionHead':{
+            type: Object,
+        },
+        'facilitiesSectionHead':{
             type: Object,
         }
     }

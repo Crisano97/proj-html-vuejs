@@ -37,6 +37,19 @@
             </div>
         </div>
     </section>
+    <section class="facilities">
+        <div class="container">
+            <SectionType 
+            :facilitiesSectionHead="facilitiesSectionHead"
+            />
+            <img src="../assets/images/play-icon.png" alt="">
+        </div>
+    </section>
+    <div class="health-features">
+        <MoreInfo v-for="(item, index) in moreInfoElements" :key="index"
+        :item="item" 
+        />
+    </div>
   </main>
 </template>
 
@@ -44,6 +57,7 @@
 import MainFeatureElement from './MainFeatureElement.vue';
 import DoctorCard from './DoctorCard.vue';
 import SectionType from './SectionType.vue';
+import MoreInfo from './MoreInfo.vue'
 
 
 export default {
@@ -51,6 +65,7 @@ export default {
         MainFeatureElement,
         DoctorCard,
         SectionType,
+        MoreInfo,
     },
     data:function(){
         return{
@@ -137,7 +152,28 @@ export default {
                 title: 'our health services',
                 text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
             },
-            
+            facilitiesSectionHead: {
+                imgUrl: '/images/icon-7.png',
+                title: 'tour our facilities',
+                text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+            },
+            moreInfoElements: [
+                {
+                    title: 'Emergency Care',
+                    imgUrl: '/images/wave-divider.png',
+                    text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+                },
+                {
+                    title: 'Expert Diagnostics',
+                    imgUrl: '/images/wave-divider.png',
+                    text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+                },
+                {
+                    title: 'Superb Rehabilitation',
+                    imgUrl: '/images/wave-divider.png',
+                    text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
+                },
+            ]
         }
     }
 }
@@ -187,4 +223,24 @@ export default {
         }
     }
     
+    section.facilities{
+        height: 80vh;
+        background-image: url('../assets/images/paralax-bg-tour-facilities.jpg');
+        background-size: cover;
+        background-position: center;
+
+        img{
+            width: 3rem;
+            margin-top: 2rem;
+        }
+    }
+
+    div.health-features{
+        // height: 10rem;
+        width: 100%;
+        padding: 3rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        background-color: $primaryTextColor;
+    }
 </style>
