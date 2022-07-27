@@ -51,6 +51,7 @@ export default {
             text-transform: uppercase;
             padding: .6rem 2rem;
             margin-top: 2rem;
+            cursor: pointer;
         }
 
         

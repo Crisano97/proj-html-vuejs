@@ -109,7 +109,7 @@ export default {
 
       p{
         line-height: 2rem;
-
+        font-size: .8rem;
       }
 
       hr{
@@ -124,6 +124,7 @@ export default {
       .socials-container{
           display: flex;
           justify-content: flex-start;
+          margin-top: 2rem;
           .fa-brands{
               font-size: 2rem;
               margin-right: .5rem;   
@@ -150,7 +151,7 @@ export default {
         text-transform: uppercase;
       }
       hr{
-        width: 5rem;
+        width: 3rem;
         margin: 1rem 0;
         color: $primaryTextColor;
       }
@@ -169,7 +170,7 @@ export default {
         text-transform: uppercase;
       }
       hr{
-        width: 5rem;
+        width: 3rem;
         margin: 1rem 0;
         color: $primaryTextColor;
       }
@@ -189,18 +190,20 @@ export default {
 
           a{
             text-decoration: none;
-            color: black;
+            color: gray;
+            font-size: .8rem;
           }
         }
       }
 
       button{
-        // width: 20rem;
         border: 2px solid gray;
         background-color: transparent;
         padding: 1rem 4rem;
         text-transform: uppercase;
         color: gray;
+        cursor: pointer;
+        margin-top: 2rem;
       }
     }
   }
@@ -229,6 +232,7 @@ export default {
         color: white;
         text-align: center;
         line-height: 2rem;
+        cursor: pointer;
       }
     }
 </style>

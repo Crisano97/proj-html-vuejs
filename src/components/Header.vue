@@ -79,9 +79,7 @@ export default {
             }
 
             div.menu-container{
-                // height: 3rem;
                 width: 30rem;
-                // background-color: red;
 
                 ul.menu{
                     display: flex;
@@ -96,6 +94,7 @@ export default {
                         &:last-child{
                             background-color: $primaryColorLight;
                             padding: .5rem 1rem;
+                            cursor: pointer;
                         }
                         a{
                             
@@ -146,7 +145,7 @@ export default {
                 padding:  .5rem 1rem;
                 color: white;
                 text-transform: uppercase;
-
+                cursor: pointer;
             }
         }
     }

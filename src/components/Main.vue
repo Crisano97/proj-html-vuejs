@@ -258,15 +258,14 @@ export default {
         img{
             width: 3rem;
             margin-top: 2rem;
+            cursor: pointer;
         }
     }
 
     div.health-features{
         width: 100%;
-        // padding: 3rem 1rem;
         display: flex;
         justify-content: space-around;
-        // background-color: $primaryTextColor;
     }
 
     section.appointment{
@@ -304,6 +303,7 @@ export default {
                 color: white;
                 text-transform: uppercase;
                 font-size: 1.2rem;
+                cursor: pointer;
             }
         }
 
