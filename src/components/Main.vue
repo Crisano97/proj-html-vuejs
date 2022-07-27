@@ -65,6 +65,9 @@
             </div>
         </div>
     </section>
+    <div class="carrasel-container">
+      <div class="container"></div>
+    </div>
   </main>
 </template>
 
@@ -265,12 +268,14 @@ export default {
 
     section.appointment{
         background-image: url(../assets/images/make-an-appointment.jpg);
+        background-size: cover;
 
         .form-container{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 1.5rem;
+            margin-top: 2rem;
             
             input{
                 width: calc(100% / 2 - 1rem);
@@ -298,5 +303,12 @@ export default {
                 font-size: 1.2rem;
             }
         }
+
+    }
+
+    div.carrasel-container{
+        height: 15rem;
+        background-image: url('../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
+
     }
 </style>
