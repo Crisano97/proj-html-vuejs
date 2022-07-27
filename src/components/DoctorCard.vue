@@ -56,14 +56,14 @@ export default {
                     margin-right: .5rem;   
                 }
                 .fa-square-facebook{
-                        color: #3C5998;
-                    }
-                    .fa-square-twitter{
-                        color: #5DB0EE;
-                    }
-                    .fa-square-instagram{
-                        color: #3C7099;
-                    }
+                    color: #3C5998;
+                }
+                .fa-square-twitter{
+                    color: #5DB0EE;
+                }
+                .fa-square-instagram{
+                    color: #3C7099;
+                }
             }
         }
     }

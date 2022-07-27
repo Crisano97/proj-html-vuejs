@@ -6,15 +6,23 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, molestias! Cupiditate ut iusto nisi dolore soluta voluptatibus hic, explicabo ipsum reiciendis pariatur minima. Velit, atque fuga. Officiis impedit quae ad!</p>
         <hr>
         <span>learn more about us</span>
+        <div class="socials-container">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
       </div>
       <div class="footer-container middle-container">
         <h4>contact information</h4>
         <hr>
         <span>
-          sdfsdf
+          <i class="fa-solid fa-location-dot"></i>
+          121 King Street, London United Kingdom
         </span>
         <span>
-          shdfhdhd
+          <i class="fa-solid fa-phone-flip"></i>
+          1.800.458.566
         </span>
       </div>
       <div class="footer-container right-container">
@@ -22,6 +30,7 @@
         <hr>
         <ul>
           <li v-for="(link, index) in footerLinksList" :key="index">
+            <i class="fa-solid fa-angle-right"></i>
             <a :href="link.url">
               {{ link.text }}
             </a>
@@ -39,7 +48,9 @@
         <span> | all Rights Reserved</span>
         <span>|Powered by Wordpress</span>
       </div>
-      <div class="return-top"></div>
+      <div class="return-top">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
     </div>
   </footer>
 </template>
@@ -86,6 +97,8 @@ export default {
       width: calc(100% / 3);
       padding-top: 4rem;
       padding-bottom: 4rem;
+      color: gray;
+      font-weight: 100;
     }
 
     .left-container{
@@ -102,25 +115,52 @@ export default {
       hr{
         margin-top: 1rem;
         margin-bottom: .5rem;
+        color: $primaryTextColor;
       }
 
       span{
-        text-transform: uppercase;        
+        text-transform: uppercase; 
+      }
+      .socials-container{
+          display: flex;
+          justify-content: flex-start;
+          .fa-brands{
+              font-size: 2rem;
+              margin-right: .5rem;   
+          }
+          .fa-square-facebook{
+              color: #3C5998;
+          }
+          .fa-youtube{
+              color: #CD2322;
+          }
+          .fa-square-twitter{
+              color: #5DB0EE;
+          }
+          .fa-square-instagram{
+              color: #3C7099;
+          }
       }
     }
 
     .middle-container{
       line-height: 2rem;
-      padding-left: 1rem;
+      padding-left: 2rem;
       h4{
         text-transform: uppercase;
       }
       hr{
         width: 5rem;
         margin: 1rem 0;
+        color: $primaryTextColor;
       }
       span{
         display: block;
+        font-size: .8rem;
+        color: lightgray;
+      }
+      i{
+        color: $primaryTextColor;
       }
     }
 
@@ -131,12 +171,21 @@ export default {
       hr{
         width: 5rem;
         margin: 1rem 0;
+        color: $primaryTextColor;
       }
       ul{
         list-style: none;
 
         li{
           margin-bottom: 1rem;
+
+          i{
+            background-color: $primaryTextColor;
+            padding: .3rem .5rem;
+            border-radius: 50%;
+            color: white;
+            font-size: .8rem;
+          }
 
           a{
             text-decoration: none;
@@ -177,6 +226,9 @@ export default {
         position: absolute;
         bottom: 0;
         right: 5rem;
+        color: white;
+        text-align: center;
+        line-height: 2rem;
       }
     }
 </style>
