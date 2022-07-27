@@ -18,7 +18,10 @@
     
     <div class="carrasel-container">
       <div class="container">
-        
+        <div class="carrassel" >
+            <img :src="slide.imgUrl" alt="" v-if="slide.visible == true"
+            v-for="(slide, index) in slides" :key="index">
+        </div>
       </div>
     </div>
   </main>
@@ -65,7 +68,24 @@ export default {
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
                 },
             ],
-            
+            slides:[
+                {
+                    visible: true,
+                    imgUrl: '/images/client-logos-1.png'
+                },
+                {
+                    visible: true,
+                    imgUrl: '/images/client-logos-2.png'
+                },
+                {
+                    visible: true,
+                    imgUrl: '/images/client-logos-3.png'
+                },
+                {
+                    visible: false,
+                    imgUrl: '/images/client-logos-4.png'
+                },
+            ]
         }
     }
 }
@@ -115,9 +135,20 @@ export default {
     }
 
     div.carrasel-container{
-        height: 15rem;
+        // height: 15rem;
         background-image: url('../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
 
+        div.carrassel{
+            display: flex;
+            // flex-shrink: 0;
+            // background-color: red;
+            // overflow: hidden;
+            border: 1px solid black;
+            img{
+                display: block;
+                
+            }
+        }
     }
 
     .c-white{
@@ -126,4 +157,6 @@ export default {
             color: white;
         }
     }
+
+    
 </style>
