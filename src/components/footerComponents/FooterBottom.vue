@@ -15,7 +15,7 @@
             </span>
         </div>
         <div class="return-top">
-            <a href="#header">
+            <a href="#top">
                 <i class="fa-solid fa-angle-up"></i>
             </a>
       </div>
@@ -48,8 +48,6 @@ export default {
         }
 
         div.return-top{
-            width: 3rem;
-            height: 2rem;
             background-color: $arrowButtonColor;
             position: absolute;
             bottom: 0;
@@ -59,8 +57,12 @@ export default {
             cursor: pointer;
 
             a{
-            text-decoration: none;
-            color: white;
+                text-decoration: none;
+                color: white;
+
+                i{
+                    padding: 1rem;
+                }  
             }
         }
     }

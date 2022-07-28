@@ -1,5 +1,5 @@
 <template>
-  <header id="header">
+  <header id="top">
     <nav>
         <div class="logo-container">
             <img class="dark" src="../assets/images/medical_logo_1x_light.png" alt="medical logo">
