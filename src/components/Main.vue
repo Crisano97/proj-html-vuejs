@@ -5,21 +5,21 @@
     <DoctorsSection />
 
     <ServicesSection />
-    
+
     <FacilitiesSection />
 
     <div class="health-features">
         <MoreInfo v-for="item in moreInfoElements" :key="item.id"
-        :item="item" 
+        :item="item"
         />
     </div>
 
     <AppointmentSection />
-    
+
     <div class="carrasel-container">
       <div class="container">
         <div class="carrassel">
-            <img :src="slide.imgUrl" alt="" 
+            <img :src="slide.imgUrl" alt=""
             v-for="(slide, slideIndex) in slides" :key="slideIndex">
         </div>
       </div>
@@ -47,7 +47,7 @@ export default {
     },
     data:function(){
         return{
-            index: 0,          
+            index: 0,
             moreInfoElements: [
                 {
                     id: 0,
@@ -121,7 +121,7 @@ export default {
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        
+
     }
 
     div.container{
@@ -131,7 +131,7 @@ export default {
             color: $secondaryTextColor;
             line-height: 2rem;
     }
-    
+
     div.health-features{
         width: 100%;
         display: flex;
@@ -149,11 +149,16 @@ export default {
             img{
                 display: block;
                 position: relative;
-                animation: slide linear 10s infinite;
+                animation: slide linear 5s infinite;
             }
             @keyframes slide {
                 0%{right: 0}
-                50%{right: 18rem}
+                40%{right: 80rem;}
+                55%{bottom: -12rem;}
+                56%{right: -57rem;}
+                60%{bottom: 0;}
+                70%{right: -35rem;}
+                90%{right: 0;}
                 100%{right: 0}
             }
         }
@@ -165,5 +170,5 @@ export default {
             color: white;
         }
     }
-    
+
 </style>
