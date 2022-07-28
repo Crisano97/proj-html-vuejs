@@ -31,7 +31,7 @@
         <ul>
           <li v-for="(link, index) in footerLinksList" :key="index">
             <i class="fa-solid fa-angle-right"></i>
-            <a :href="link.url">
+            <a :href="link.url" @click.prevent="">
               {{ link.text }}
             </a>
           </li>

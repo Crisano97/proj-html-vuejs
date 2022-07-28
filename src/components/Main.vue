@@ -139,7 +139,6 @@ export default {
     }
 
     div.carrasel-container{
-        height: 16rem;
         background-image: url('../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
 
         div.carrassel{
@@ -147,18 +146,16 @@ export default {
             justify-content: space-between;
             overflow: hidden;
             img{
-                display: block;
                 position: relative;
-                animation: slide linear 5s infinite;
+                animation: slide linear 10s infinite;
             }
             @keyframes slide {
                 0%{right: 0}
-                40%{right: 80rem;}
-                55%{bottom: -12rem;}
-                56%{right: -57rem;}
-                60%{bottom: 0;}
-                70%{right: -35rem;}
-                90%{right: 0;}
+                40%{right: 90rem;}
+                53%{bottom: -12rem;}
+                54%{right: -50rem;}
+                55%{bottom: 0;}
+                80%{right: 0;}
                 100%{right: 0}
             }
         }
