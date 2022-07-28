@@ -49,7 +49,7 @@ export default {
                 0%{right: 0}
                 40%{right: 90rem;}
                 53%{bottom: -12rem;}
-                54%{right: -50rem;}
+                54%{right: -65rem;}
                 55%{bottom: 0;}
                 80%{right: 0;}
                 100%{right: 0}
