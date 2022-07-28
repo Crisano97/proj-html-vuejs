@@ -2,9 +2,15 @@
   <div class="card">
     <img :src="doctor.imgUrl" :alt="doctor.name">
     <div class="info">
-        <h4>{{doctor.name}}</h4>
-        <span>{{doctor.role}}</span>
-        <p>{{doctor.description}}</p>
+        <h4>
+            {{doctor.name}}
+        </h4>
+        <span>
+            {{doctor.role}}
+        </span>
+        <p>
+            {{doctor.description}}
+        </p>
         <div class="socials-container">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-square-twitter"></i>

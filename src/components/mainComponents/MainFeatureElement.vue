@@ -1,13 +1,21 @@
 <template>
     <div class="element-container" v-if="feature">
         <img :src="feature.imgUrl" alt="">
-        <h3>{{ feature.title }}</h3>
-        <p>{{ feature.text }}</p>
+        <h3>
+            {{ feature.title }}
+        </h3>
+        <p>
+            {{ feature.text }}
+        </p>
     </div>
     <div class="service-element" v-else-if="service">
             <img :src="service.imgUrl" alt="">
-            <h3>{{ service.title }}</h3>
-            <p>{{ service.text }}</p>
+            <h3>
+                {{ service.title }}
+            </h3>
+            <p>
+                {{ service.text }}
+            </p>
     </div>
 </template>
 

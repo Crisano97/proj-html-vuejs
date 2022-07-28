@@ -10,7 +10,9 @@
                 <input type="text" placeholder="Phone Number">
                 <input type="date">
                 <textarea name="" id="" cols="100" rows="10" placeholder="How can we help?"></textarea>
-                <button>make an appointment</button>
+                <button>
+                    make an appointment
+                </button>
             </div>
         </div>
     </section>

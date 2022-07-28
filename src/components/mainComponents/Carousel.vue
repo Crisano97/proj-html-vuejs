@@ -1,10 +1,11 @@
 <template>
   <div class="carousel-container">
       <div class="container">
-        <div class="carousel">
-            <img :src="slide.imgUrl" alt=""
-            v-for="(slide, slideIndex) in slides" :key="slideIndex">
-        </div>
+            <div class="carousel">
+                <img :src="slide.imgUrl" alt="carousel image"
+                v-for="(slide, slideIndex) in slides" :key="slideIndex"
+                >
+            </div>
       </div>
     </div>
 </template>

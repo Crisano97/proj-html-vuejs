@@ -2,7 +2,7 @@
   <header id="header">
     <nav>
         <div class="logo-container">
-            <img class="dark" src="../assets/images/medical_logo_1x_light.png" alt="">
+            <img class="dark" src="../assets/images/medical_logo_1x_light.png" alt="medical logo">
         </div>
         <div class="menu-container">
             <ul class="menu">
@@ -16,9 +16,18 @@
     </nav>
     <div class="container">
         <div class="element-container">
-            <h1>Caring <span>For Life</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae.</p>
-            <button>learn more</button>
+            <h1>
+                Caring
+                <span>
+                    For Life
+                </span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae.
+            </p>
+            <button>
+                learn more
+            </button>
         </div>
     </div>
   </header>

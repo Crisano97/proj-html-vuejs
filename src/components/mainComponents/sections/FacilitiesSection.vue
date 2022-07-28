@@ -4,7 +4,7 @@
             <SectionHead class="c-white" 
             :data="facilitiesSectionHead"
             />
-            <img src="../../../assets/images/play-icon.png" alt="">
+            <img src="../../../assets/images/play-icon.png" alt="play icon">
         </div>
   </section>
 </template>

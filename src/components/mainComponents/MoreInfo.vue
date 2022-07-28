@@ -1,21 +1,39 @@
 <template>
   <div class="info-container bg-color-1" v-if="item.id == 0">
-    <h4>{{item.title}}</h4>
-    <img :src="item.imgUrl" alt="divider">
-    <p>{{item.text}}</p>
-    <button>learn more</button>
+        <h4>
+            {{item.title}}
+        </h4>
+        <img :src="item.imgUrl" alt="divider">
+        <p>
+            {{item.text}}
+        </p>
+        <button>
+            learn more
+        </button>
   </div>
   <div class="info-container bg-color-2" v-else-if="item.id == 1">
-    <h4>{{item.title}}</h4>
-    <img :src="item.imgUrl" alt="divider">
-    <p>{{item.text}}</p>
-    <button>learn more</button>
+        <h4>
+            {{item.title}}
+        </h4>
+        <img :src="item.imgUrl" alt="divider">
+        <p>
+            {{item.text}}
+        </p>
+        <button>
+            learn more
+        </button>
   </div>
   <div class="info-container bg-color-3" v-else>
-    <h4>{{item.title}}</h4>
-    <img :src="item.imgUrl" alt="divider">
-    <p>{{item.text}}</p>
-    <button>learn more</button>
+        <h4>
+            {{item.title}}
+        </h4>
+        <img :src="item.imgUrl" alt="divider">
+        <p>
+            {{item.text}}
+        </p>
+        <button>
+            learn more
+        </button>
   </div>
 </template>
 

@@ -2,8 +2,12 @@
   <section class="welcome">
         <div class="container">
             <div class="text-container">
-                <h1>Welcome to Avada Health</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo. Quidem nisi, minus labore laborum facere impedit, quibusdam molestiae cupiditate.</p>
+                <h1>
+                    Welcome to Avada Health
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo. Quidem nisi, minus labore laborum facere impedit, quibusdam molestiae cupiditate.
+                </p>
             </div>    
             <div class="features">
                 <MainFeatureElement v-for="(feature, index) in welcomeSectionFeatures" :key="index"

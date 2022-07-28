@@ -1,7 +1,9 @@
 <template>
     <div class="section-type-container">
         <img :src="data.imgUrl" alt="">
-        <h2 :class="{'text-uppercase' : data.imgUrl}">{{data.title}}</h2>
+        <h2 :class="{'text-uppercase' : data.imgUrl}">
+            {{data.title}}
+        </h2>
         <hr>
         <span>
             {{data.text}}
