@@ -18,11 +18,10 @@
     
     <div class="carrasel-container">
       <div class="container">
-        <!-- <div class="carrassel" @click="nextSlideImg()">
-            <img :src="slide.imgUrl" alt="" v-if="slideIndex == index"
-            :class="{inactive: slideIndex == index}"
+        <div class="carrassel">
+            <img :src="slide.imgUrl" alt="" 
             v-for="(slide, slideIndex) in slides" :key="slideIndex">
-        </div> -->
+        </div>
       </div>
     </div>
   </main>
@@ -89,16 +88,6 @@ export default {
             ]
         }
     },
-    methods:{
-        
-        // nextSlideImg: function () {
-        //     this.index = this.index + 1;
-        //     if (this.index === this.slides.length) {
-        //         this.index = 0;
-        //     }
-
-    },
-    
 }
 </script>
 
@@ -155,11 +144,17 @@ export default {
 
         div.carrassel{
             display: flex;
-            // overflow: hidden;
-            border: 1px solid black;
+            justify-content: space-between;
+            overflow: hidden;
             img{
                 display: block;
-                
+                position: relative;
+                animation: slide linear 10s infinite;
+            }
+            @keyframes slide {
+                0%{right: 0}
+                50%{right: 18rem}
+                100%{right: 0}
             }
         }
     }
@@ -169,10 +164,6 @@ export default {
         hr{
             color: white;
         }
-    }
-
-    .inactive{
-        display: none;
     }
     
 </style>

@@ -228,7 +228,7 @@ export default {
       div.return-top{
         width: 3rem;
         height: 2rem;
-        background-color: black;
+        background-color: $arrowButtonColor;
         position: absolute;
         bottom: 0;
         right: 5rem;
