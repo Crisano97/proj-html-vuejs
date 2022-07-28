@@ -194,6 +194,7 @@ export default {
             text-decoration: none;
             color: $secondaryTextColor;
             font-size: .8rem;
+            padding-left: .5rem;
           }
         }
       }

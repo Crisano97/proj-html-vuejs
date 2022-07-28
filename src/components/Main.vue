@@ -16,14 +16,7 @@
 
     <AppointmentSection />
 
-    <div class="carrasel-container">
-      <div class="container">
-        <div class="carrassel">
-            <img :src="slide.imgUrl" alt=""
-            v-for="(slide, slideIndex) in slides" :key="slideIndex">
-        </div>
-      </div>
-    </div>
+    <Carousel />
   </main>
 </template>
 
@@ -33,8 +26,8 @@ import DoctorsSection from './mainComponents/DoctorsSection.vue';
 import ServicesSection from './mainComponents/ServicesSection.vue';
 import FacilitiesSection from './mainComponents/FacilitiesSection.vue';
 import AppointmentSection from './mainComponents/AppointmentSection.vue';
-import MoreInfo from './mainComponents/MoreInfo.vue'
-
+import MoreInfo from './mainComponents/MoreInfo.vue';
+import Carousel from './mainComponents/Carousel.vue';
 
 export default {
     components:{
@@ -44,6 +37,7 @@ export default {
         FacilitiesSection,
         AppointmentSection,
         MoreInfo,
+        Carousel,
     },
     data:function(){
         return{
@@ -68,24 +62,7 @@ export default {
                     text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
                 },
             ],
-            slides:[
-                {
-                    visible: true,
-                    imgUrl: '/images/client-logos-3.png'
-                },
-                {
-                    visible: true,
-                    imgUrl: '/images/client-logos-1.png'
-                },
-                {
-                    visible: true,
-                    imgUrl: '/images/client-logos-4.png'
-                },
-                {
-                    visible: false,
-                    imgUrl: '/images/client-logos-2.png'
-                },
-            ]
+            
         }
     },
 }
@@ -124,29 +101,6 @@ export default {
         width: 100%;
         display: flex;
         justify-content: space-around;
-    }
-
-    div.carrasel-container{
-        background-image: url('../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
-
-        div.carrassel{
-            display: flex;
-            justify-content: space-between;
-            overflow: hidden;
-            img{
-                position: relative;
-                animation: slide linear 10s infinite;
-            }
-            @keyframes slide {
-                0%{right: 0}
-                40%{right: 90rem;}
-                53%{bottom: -12rem;}
-                54%{right: -50rem;}
-                55%{bottom: 0;}
-                80%{right: 0;}
-                100%{right: 0}
-            }
-        }
     }
 
     .c-white{
