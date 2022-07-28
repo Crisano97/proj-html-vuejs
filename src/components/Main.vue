@@ -71,19 +71,19 @@ export default {
             slides:[
                 {
                     visible: true,
+                    imgUrl: '/images/client-logos-3.png'
+                },
+                {
+                    visible: true,
                     imgUrl: '/images/client-logos-1.png'
                 },
                 {
                     visible: true,
-                    imgUrl: '/images/client-logos-2.png'
-                },
-                {
-                    visible: true,
-                    imgUrl: '/images/client-logos-3.png'
+                    imgUrl: '/images/client-logos-4.png'
                 },
                 {
                     visible: false,
-                    imgUrl: '/images/client-logos-4.png'
+                    imgUrl: '/images/client-logos-2.png'
                 },
             ]
         }
