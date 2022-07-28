@@ -1,22 +1,22 @@
 <template>
   <main>
-    <WelcomeSection />
+        <WelcomeSection />
 
-    <DoctorsSection />
+        <DoctorsSection />
 
-    <ServicesSection />
+        <ServicesSection />
 
-    <FacilitiesSection />
+        <FacilitiesSection />
 
-    <div class="health-features">
-        <MoreInfo v-for="item in moreInfoElements" :key="item.id"
-        :item="item"
-        />
-    </div>
+        <div class="health-features">
+            <MoreInfo v-for="item in moreInfoElements" :key="item.id"
+            :item="item"
+            />
+        </div>
 
-    <AppointmentSection />
+        <AppointmentSection />
 
-    <Carousel />
+        <Carousel />
   </main>
 </template>
 

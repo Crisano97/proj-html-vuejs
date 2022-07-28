@@ -1,36 +1,36 @@
 <template>
   <header id="top">
-    <nav>
-        <div class="logo-container">
-            <img class="dark" src="../assets/images/medical_logo_1x_light.png" alt="medical logo">
+        <nav>
+            <div class="logo-container">
+                <img class="dark" src="../assets/images/medical_logo_1x_light.png" alt="medical logo">
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li v-for="(link, index) in navLinks" :key="index">
+                        <a :href="link.url">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="element-container">
+                <h1>
+                    Caring
+                    <span>
+                        For Life
+                    </span>
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae.
+                </p>
+                <button>
+                    learn more
+                </button>
+            </div>
         </div>
-        <div class="menu-container">
-            <ul class="menu">
-                <li v-for="(link, index) in navLinks" :key="index">
-                    <a :href="link.url">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="element-container">
-            <h1>
-                Caring
-                <span>
-                    For Life
-                </span>
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae.
-            </p>
-            <button>
-                learn more
-            </button>
-        </div>
-    </div>
-  </header>
+    </header>
 </template>
 
 <script>
@@ -121,7 +121,7 @@ export default {
         div.container{
             width: 52%;
             margin: 0 auto;
-            padding-top: 9%;
+            padding-top: 8rem;
             
             div.element-container{
                 width: 31rem;
