@@ -99,7 +99,7 @@ export default {
       width: calc(100% / 3);
       padding-top: 4rem;
       padding-bottom: 4rem;
-      color: gray;
+      color: $secondaryTextColor;
       font-weight: 100;
     }
 
@@ -160,7 +160,6 @@ export default {
       span{
         display: block;
         font-size: .8rem;
-        color: lightgray;
       }
       i{
         color: $primaryTextColor;
@@ -193,18 +192,18 @@ export default {
 
           a{
             text-decoration: none;
-            color: gray;
+            color: $secondaryTextColor;
             font-size: .8rem;
           }
         }
       }
 
       button{
-        border: 2px solid gray;
+        border: 2px solid $secondaryTextColor;
         background-color: transparent;
         padding: 1rem 4rem;
         text-transform: uppercase;
-        color: gray;
+        color: $secondaryTextColor;
         cursor: pointer;
         margin-top: 2rem;
       }

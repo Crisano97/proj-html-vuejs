@@ -35,31 +35,31 @@ export default {
                 {
                     imgUrl: '/images/icon-14.png',
                     title: 'reambulation center',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim, error sit voluptam accusantim error sit voluptam.'
                 },
                 {
                     imgUrl: '/images/icon-15.png',
                     title: 'dental implants',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim, error sit voluptam accusantim error sit voluptam.'
                 },
                 {
                     imgUrl: '/images/icon-16.png',
                     title: 'medicine researc',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim, error sit voluptam accusantim error sit voluptam.'
                 },
                 {
                     imgUrl: '/images/icon-11.png',
                     title: 'blood bank',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim, error sit voluptam accusantim error sit voluptam.'
                 },
                 {
                     imgUrl: '/images/icon-12.png',
                     title: 'pharmaceutical advice',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim, error sit voluptam accusantim error sit voluptam.'
                 },{
                     imgUrl: '/images/icon-13.png',
                     title: 'medical coounseling',
-                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim.'
+                    text: 'Sed ut perispiciatis unde omnie isste natys error sit voluptam accusantim, error sit voluptam accusantim error sit voluptam.'
                 },
             ],
         }

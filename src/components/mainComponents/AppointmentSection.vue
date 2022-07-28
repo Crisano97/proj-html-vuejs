@@ -56,6 +56,7 @@ export default {
                 border: 1px solid white;
                 background-color: transparent;
                 color: white;
+                outline: none;
             }
 
             textarea{
@@ -64,6 +65,7 @@ export default {
                 border: 1px solid white;
                 background-color: transparent;
                 color: white;
+                outline: none;
             }
 
             button{

@@ -102,24 +102,12 @@ export default {
     section{
         padding: 6rem 0;
 
-        div.text-container{
-            width: 70%;
-            margin: 0 auto;
-            font-weight: 100;
-
-            h1{
-                font-weight: 100;
-            }
-            p{
-                margin-top: 1.5rem;
-            }
-            }
-
         div.features{
             margin-top: 4rem;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            
         }
 
     }

@@ -51,6 +51,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
+    div.text-container{
+        width: 70%;
+        margin: 0 auto;
+        font-weight: 100;
+        h1{
+            font-weight: 300;
+            font-size: 2rem;
+        }
+        p{
+            margin-top: 1.5rem;
+            font-weight: 400;
+        }
+    }
 </style>

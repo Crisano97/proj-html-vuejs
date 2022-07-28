@@ -28,12 +28,16 @@ export default {
 
         h2{
             font-size: 2rem;
-            font-weight: 100;
+            font-weight: 400;
         }
 
         hr{
             width: 40%;
             margin: 2rem auto;
+        }
+
+        span{
+            font-weight: 400;
         }
 
         .text-uppercase{

@@ -31,7 +31,7 @@ export default {
 
         h3{
             text-transform: uppercase;
-            font-weight: 100;
+            font-weight: 500;
         }
 
         img{
@@ -46,7 +46,11 @@ export default {
 
         h3{
             text-transform: uppercase;
-            font-weight: 100;
+            font-weight: 400;
+        }
+        
+        p{
+            font-weight: 300;
         }
 
         img{

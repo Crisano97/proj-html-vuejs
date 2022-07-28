@@ -35,16 +35,17 @@ export default {
         }
 
         div.info{
-            padding: 1rem;
+            padding: 2rem 1.5rem;
             text-align: left;
             
             h4{
-                text-transform: uppercase;
-                
+                text-transform: uppercase;   
             }
 
             p{
                 margin: 2rem 0;
+                font-weight: 300;
+                font-size: .8rem;
             }
 
             .socials-container{
