@@ -38,25 +38,16 @@ export default {
         background-image: url('../../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
 
         div.carousel{
-            height: 15rem;
             display: flex;
             justify-content: space-between;
             overflow: hidden;
             img{
-                position: relative;
-                animation: slide linear 10s infinite;
+                animation: slide linear 15s infinite;
                 
             }
             @keyframes slide {
-                0%{right: 0}
-                40%{right: 85rem;}
-                53%{
-                    width: 0;
-                    right: -50rem;
-                }
-                54%{width: initial;}
-                80%{right: 0;}
-                100%{right: 0}
+                0%{transform:translateX(50rem)}
+                100%{transform:translateX(-60rem)}
             }
         }
     }
