@@ -42,12 +42,12 @@ export default {
             justify-content: space-between;
             overflow: hidden;
             img{
-                animation: slide linear 15s infinite;
+                animation: slide linear 10s infinite;
                 
             }
             @keyframes slide {
-                0%{transform:translateX(50rem)}
-                100%{transform:translateX(-60rem)}
+                0%{transform:translateX(48rem)}
+                100%{transform:translateX(-62rem)}
             }
         }
     }
