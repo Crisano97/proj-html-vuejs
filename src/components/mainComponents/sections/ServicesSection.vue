@@ -15,8 +15,8 @@
 
 <script>
 
-import SectionHead from './SectionHead.vue';
-import MainFeatureElement from './MainFeatureElement.vue';
+import SectionHead from '../SectionHead.vue';
+import MainFeatureElement from '../MainFeatureElement.vue';
 
 
 export default {

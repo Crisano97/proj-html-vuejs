@@ -16,7 +16,7 @@
 
 <script>
 
-import MainFeatureElement from './MainFeatureElement.vue'
+import MainFeatureElement from '../../mainComponents/MainFeatureElement.vue'
 
 export default {
     components:{

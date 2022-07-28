@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import SectionHead from './SectionHead.vue';
+import SectionHead from '../SectionHead.vue';
 export default {
     components:{
         SectionHead,
@@ -35,11 +35,11 @@ export default {
 
 <style lang="scss">
 
-    @import "../../styles/general.scss";
+    @import "../../../styles/general.scss";
 
 
     section.appointment{
-        background-image: url('../../assets/images/make-an-appointment.jpg');
+        background-image: url('../../../assets/images/make-an-appointment.jpg');
         background-size: cover;
         
 

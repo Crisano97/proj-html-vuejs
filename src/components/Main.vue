@@ -21,11 +21,11 @@
 </template>
 
 <script>
-import WelcomeSection from './mainComponents/WelcomeSection.vue';
-import DoctorsSection from './mainComponents/DoctorsSection.vue';
-import ServicesSection from './mainComponents/ServicesSection.vue';
-import FacilitiesSection from './mainComponents/FacilitiesSection.vue';
-import AppointmentSection from './mainComponents/AppointmentSection.vue';
+import WelcomeSection from './mainComponents/sections/WelcomeSection.vue';
+import DoctorsSection from './mainComponents/sections/DoctorsSection.vue';
+import ServicesSection from './mainComponents/sections/ServicesSection.vue';
+import FacilitiesSection from './mainComponents/sections/FacilitiesSection.vue';
+import AppointmentSection from './mainComponents/sections/AppointmentSection.vue';
 import MoreInfo from './mainComponents/MoreInfo.vue';
 import Carousel from './mainComponents/Carousel.vue';
 

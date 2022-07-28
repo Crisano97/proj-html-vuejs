@@ -4,14 +4,14 @@
             <SectionHead class="c-white" 
             :data="facilitiesSectionHead"
             />
-            <img src="../../assets/images/play-icon.png" alt="">
+            <img src="../../../assets/images/play-icon.png" alt="">
         </div>
   </section>
 </template>
 
 <script>
 
-import SectionHead from './SectionHead.vue';
+import SectionHead from '../SectionHead.vue';
 
 
 export default {
@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
      section.facilities{
         height: 80vh;
-        background-image: url('../../assets/images/paralax-bg-tour-facilities.jpg');
+        background-image: url('../../../assets/images/paralax-bg-tour-facilities.jpg');
         background-size: cover;
         background-position: center;       
 

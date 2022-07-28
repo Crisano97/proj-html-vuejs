@@ -16,8 +16,8 @@
 
 <script>
 
-import SectionHead from './SectionHead.vue';
-import DoctorCard from './DoctorCard.vue';
+import SectionHead from '../SectionHead.vue';
+import DoctorCard from '../DoctorCard.vue';
 
 
 export default {
@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss">
 
-    @import "../../styles/general.scss"; 
+    @import "../../../styles/general.scss"; 
 
     section.doctors{
         background-color: $grayBgColor;
