@@ -18,10 +18,11 @@
     
     <div class="carrasel-container">
       <div class="container">
-        <div class="carrassel" >
-            <img :src="slide.imgUrl" alt="" v-if="slide.visible == true"
-            v-for="(slide, index) in slides" :key="index">
-        </div>
+        <!-- <div class="carrassel" @click="nextSlideImg()">
+            <img :src="slide.imgUrl" alt="" v-if="slideIndex == index"
+            :class="{inactive: slideIndex == index}"
+            v-for="(slide, slideIndex) in slides" :key="slideIndex">
+        </div> -->
       </div>
     </div>
   </main>
@@ -47,7 +48,7 @@ export default {
     },
     data:function(){
         return{
-                          
+            index: 0,          
             moreInfoElements: [
                 {
                     id: 0,
@@ -87,7 +88,17 @@ export default {
                 },
             ]
         }
-    }
+    },
+    methods:{
+        
+        // nextSlideImg: function () {
+        //     this.index = this.index + 1;
+        //     if (this.index === this.slides.length) {
+        //         this.index = 0;
+        //     }
+
+    },
+    
 }
 </script>
 
@@ -95,8 +106,12 @@ export default {
 
     @import "../styles/general.scss";
 
+    main{
+        color: $secondaryTextColor;
+    }
+
     section{
-        padding: 4rem 0;
+        padding: 6rem 0;
 
         div.text-container{
             width: 70%;
@@ -135,13 +150,11 @@ export default {
     }
 
     div.carrasel-container{
-        // height: 15rem;
+        height: 16rem;
         background-image: url('../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg');
 
         div.carrassel{
             display: flex;
-            // flex-shrink: 0;
-            // background-color: red;
             // overflow: hidden;
             border: 1px solid black;
             img{
@@ -158,5 +171,8 @@ export default {
         }
     }
 
+    .inactive{
+        display: none;
+    }
     
 </style>

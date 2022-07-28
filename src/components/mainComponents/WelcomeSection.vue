@@ -3,7 +3,7 @@
         <div class="container">
             <div class="text-container">
                 <h1>Welcome to Avada Health</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo. Quidem nisi, minus labore laborum facere impedit, quibusdam molestiae cupiditate architecto autem voluptatum! Eius eveniet placeat quos earum fuga vel.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo. Quidem nisi, minus labore laborum facere impedit, quibusdam molestiae cupiditate.</p>
             </div>    
             <div class="features">
                 <MainFeatureElement v-for="(feature, index) in welcomeSectionFeatures" :key="index"

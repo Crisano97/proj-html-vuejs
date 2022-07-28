@@ -1,7 +1,7 @@
 <template>
     <div class="section-type-container">
         <img :src="data.imgUrl" alt="">
-        <h2>{{data.title}}</h2>
+        <h2 :class="{'text-uppercase' : data.imgUrl}">{{data.title}}</h2>
         <hr>
         <span>
             {{data.text}}
@@ -28,13 +28,16 @@ export default {
 
         h2{
             font-size: 2rem;
-            text-transform: uppercase;
             font-weight: 100;
         }
 
         hr{
             width: 40%;
             margin: 2rem auto;
+        }
+
+        .text-uppercase{
+            text-transform: uppercase;
         }
     }
 

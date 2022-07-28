@@ -25,7 +25,7 @@ export default {
     data:function(){
         return{
             appointmentSectionHead: {
-                title: 'Make an appointment',
+                title: 'Make an Appointment',
                 text: 'Sed ut perspiciatis unde pmnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsia quae av ill inventore veritatis et quasi architecto beatae',
             },
         }
@@ -41,6 +41,7 @@ export default {
     section.appointment{
         background-image: url('../../assets/images/make-an-appointment.jpg');
         background-size: cover;
+        
 
         .form-container{
             display: flex;

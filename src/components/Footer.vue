@@ -49,7 +49,9 @@
         <span>|Powered by Wordpress</span>
       </div>
       <div class="return-top">
-        <i class="fa-solid fa-angle-up"></i>
+        <a href="#header">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
       </div>
     </div>
   </footer>
@@ -113,7 +115,7 @@ export default {
       }
 
       hr{
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-bottom: .5rem;
         color: $primaryTextColor;
       }
@@ -151,7 +153,7 @@ export default {
         text-transform: uppercase;
       }
       hr{
-        width: 3rem;
+        width: 2rem;
         margin: 1rem 0;
         color: $primaryTextColor;
       }
@@ -162,6 +164,7 @@ export default {
       }
       i{
         color: $primaryTextColor;
+        padding-right: .5rem;
       }
     }
 
@@ -170,7 +173,7 @@ export default {
         text-transform: uppercase;
       }
       hr{
-        width: 3rem;
+        width: 2rem;
         margin: 1rem 0;
         color: $primaryTextColor;
       }
@@ -229,10 +232,14 @@ export default {
         position: absolute;
         bottom: 0;
         right: 5rem;
-        color: white;
         text-align: center;
         line-height: 2rem;
         cursor: pointer;
+
+        a{
+          text-decoration: none;
+          color: white;
+        }
       }
     }
 </style>

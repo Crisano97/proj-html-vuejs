@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="header">
     <nav>
         <div class="logo-container">
             <img class="dark" src="../assets/images/medical_logo_1x_light.png" alt="">
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="element-container">
             <h1>Caring <span>For Life</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae, animi aut inventore vero natus, cupiditate, ad cum vitae repellendus at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at sequi recusandae harum iusto. Commodi pariatur quae expedita repudiandae.</p>
             <button>learn more</button>
         </div>
     </div>
@@ -116,12 +116,11 @@ export default {
             
             div.element-container{
                 width: 31rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-start;
+                line-height: 2rem;
+                padding: 2rem 0;
                 height: 12rem;
                 color: white;
+                text-align: start;
             }
             
 
@@ -135,8 +134,8 @@ export default {
             
             p{
                 font-weight: 100;
-                font-size:.8rem;
-                line-height: 1.5rem;
+                font-size:.9rem;
+                margin: 1.3rem 0;
             }
 
             button{
